@@ -1,0 +1,3 @@
+
+Consumer key:    ck_0000000000000000000000000000000000000000
+Consumer secret: cs_ffffffffffffffffffffffffffffffffffffffff
