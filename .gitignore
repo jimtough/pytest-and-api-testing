@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 .idea/
 api-keys/my-private-api-keys.txt
+pytest_tutorial/demo_report.html
