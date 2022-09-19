@@ -1,5 +1,11 @@
+import pytest
+
+# mark every test method in this module as 'fe' and 'slow'
+pytestmark = [pytest.mark.fe, pytest.mark.slow]
 
 
+# mark every test method in this class as 'smoke'
+@pytest.mark.smoke
 class TestCheckout(object):
 
     def test_checkout_as_guest(self):
