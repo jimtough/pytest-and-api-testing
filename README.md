@@ -34,3 +34,12 @@ To deactivate the virtual environment, use the deactivate script:
 * Open a Windows Command Prompt as Administrator
 * Deactivate the virtual environment
   * `\path\to\parent\dir\venv01\Scripts\deactivate`
+
+## 'setuptools' module and the setup.py file
+
+The instructor just introduced the 'setuptools' module. I believe it is a standard Python module.
+
+We created a `setup.py` file in the root of the project.
+I don't yet understand what value this provides. Hopefully it will be explained later in the course.
+
+Command to execute the setup.py file: `python setup.py install`
