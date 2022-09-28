@@ -8,9 +8,12 @@
 
 ## quick notes
 
-* It appears that `pytest.ini` must be in the current directory when you call `pytest`, otherwise it will be ignored
-* Using the `-s` option for PyTest will allow console output from the tests to display
+* It appears that `pytest.ini` must be in the current ~~directory~~ module when you call `pytest`, otherwise it will be ignored
+* Using the `-s` option for PyTest will allow console output from the tests to display (such as print() statements)
   * `pytest -m my_marker -s`
+* If you want output from 'logging' module displayed in the console, use this:
+  * `pytest -m my_marker -s --log-cli-level=DEBUG`
+  * ALTERNATIVE: add some configuration to the `pytest.ini` in your unit tests module to make logging always enabled
 * pytest-html is used to generate unit test reports
   * `pip install pytest-html` (you only need to do this once to install)
   * `pytest --html=demo_report.html --self-contained-html`
