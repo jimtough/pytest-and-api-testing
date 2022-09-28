@@ -1,11 +1,12 @@
 
 from my_apitest.src.utilities.generic_utils import generate_random_email_and_password
+from my_apitest.src.utilities.requests_utils import RequestsUtils
 
 
 class CustomerHelper(object):
 
     def __init__(self):
-        pass
+        self.requests_utils = RequestsUtils()
 
     def create_customer(self, email=None, password=None, **kwargs):
         if not email:
@@ -19,6 +20,6 @@ class CustomerHelper(object):
         # add all the dict key/value pairs from kwargs into the 'payload' dict
         payload.update(kwargs)
 
-        # TODO actually make an API call to create the customer...
+        self.requests_utils.post('customers', payload=payload)
 
         return True

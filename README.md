@@ -49,3 +49,12 @@ We created a `setup.py` file in the root of the project.
 I don't yet understand what value this provides. Hopefully it will be explained later in the course.
 
 Command to execute the setup.py file: `python setup.py install`
+
+## Python debugger (pdb) tips
+
+* the instructor likes to put this into code for manually testing and inspecting: `import pdb; pdb.set_trace()`
+  * seems you can put this code anywhere, such as inside a function
+  * when that code is reached, it works like a breakpoint
+  * in the console (under Terminal in PyCharm) you will have a `(Pdb)` prompt
+    * enter a Python command or just type the name of a variable and see the output
+    * if the variable is an object, this can be useful to see a string representation: `my_object_name.json()`
