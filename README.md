@@ -20,6 +20,7 @@
 * pytest-html is used to generate unit test reports
   * `pip install pytest-html` (you only need to do this once to install)
   * `pytest --html=demo_report.html --self-contained-html`
+* documentation for the 'requests' package: https://requests.readthedocs.io/en/latest/user/authentication/#oauth-1-authentication
 
 ## creating a virtual environment
 
@@ -58,3 +59,4 @@ Command to execute the setup.py file: `python setup.py install`
   * in the console (under Terminal in PyCharm) you will have a `(Pdb)` prompt
     * enter a Python command or just type the name of a variable and see the output
     * if the variable is an object, this can be useful to see a string representation: `my_object_name.json()`
+    * same as above, but with pretty-print mode: `pp my_object_name.json()`
