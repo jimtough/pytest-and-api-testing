@@ -1,5 +1,8 @@
 # pytest-and-api-testing
 
+## FOR ME TODO
+
+* I might have to go back and do `pip install woocommerce` (check actual name) because I wiped out my original venv
 
 ## references
 
