@@ -1,8 +1,10 @@
 # pytest-and-api-testing
 
+
 ## FOR ME TODO
 
 * I might have to go back and do `pip install woocommerce` (check actual name) because I wiped out my original venv
+
 
 ## references
 
@@ -21,6 +23,10 @@
   * `pip install pytest-html` (you only need to do this once to install)
   * `pytest --html=demo_report.html --self-contained-html`
 * documentation for the 'requests' package: https://requests.readthedocs.io/en/latest/user/authentication/#oauth-1-authentication
+* setting environment variables on Windows 10 via the Command Prompt:
+  * `SET` - this will output the keys/values of all environment variables to the console
+  * `SET MY_VAR=abc123` - this will create a new environment variable named 'MY_VAR' with the value 'abc123'
+
 
 ## creating a virtual environment
 
@@ -42,6 +48,7 @@ To deactivate the virtual environment, use the deactivate script:
 * Deactivate the virtual environment
   * `\path\to\parent\dir\venv01\Scripts\deactivate`
 
+
 ## 'setuptools' module and the setup.py file
 
 The instructor just introduced the 'setuptools' module. I believe it is a standard Python module.
@@ -50,6 +57,7 @@ We created a `setup.py` file in the root of the project.
 I don't yet understand what value this provides. Hopefully it will be explained later in the course.
 
 Command to execute the setup.py file: `python setup.py install`
+
 
 ## Python debugger (pdb) tips
 
