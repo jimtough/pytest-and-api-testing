@@ -65,6 +65,8 @@ Command to execute the setup.py file: `python setup.py install`
   * seems you can put this code anywhere, such as inside a function
   * when that code is reached, it works like a breakpoint
   * in the console (under Terminal in PyCharm) you will have a `(Pdb)` prompt
-    * enter a Python command or just type the name of a variable and see the output
+    * enter the name of a variable and see the output
     * if the variable is an object, this can be useful to see a string representation: `my_object_name.json()`
     * same as above, but with pretty-print mode: `pp my_object_name.json()`
+    * enter the command `l` and pdb will display the 'line' of code being executed
+    * `c` command means 'continue'

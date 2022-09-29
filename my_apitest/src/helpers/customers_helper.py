@@ -20,6 +20,5 @@ class CustomerHelper(object):
         # add all the dict key/value pairs from kwargs into the 'payload' dict
         payload.update(kwargs)
 
-        self.requests_utils.post('customers', payload=payload, expected_status_code=201)
-
-        return True
+        create_user_json = self.requests_utils.post('customers', payload=payload, expected_status_code=201)
+        return create_user_json
