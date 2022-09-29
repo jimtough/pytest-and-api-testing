@@ -3,6 +3,7 @@ import logging as logger
 
 from my_apitest.src.utilities.generic_utils import generate_random_email_and_password
 from my_apitest.src.helpers.customers_helper import CustomerHelper
+from my_apitest.src.dao.customers_dao import CustomersDAO
 
 
 # instructor wants to name this "test case id 29" for some reason. Why 29?? whatever...
@@ -26,4 +27,10 @@ def test_create_customer_only_email_and_password():
         f"Create customer API returned value for 'first_name', but it should be empty"
 
     # verify customer is created in database
-    # TODO ...
+    customer_dao = CustomersDAO()
+    customer_info = customer_dao.get_customer_by_email(email)
+    customer_id_in_api_response = cust_api_info['id']
+    customer_id_in_database = customer_info[0]['ID']
+    assert customer_id_in_api_response == customer_id_in_database, \
+        f"Customer id in API response does not match id in database" \
+        f" | API: {customer_id_in_api_response} | DB: [{customer_id_in_database}]"

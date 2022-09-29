@@ -11,6 +11,11 @@
 * https://docs.pytest.org/en/stable/example/markers.html
 
 
+## lessons learned
+
+* Be VERY CAREFUL about using the PyCharm "Refactor... -> Rename..." feature. I accidentally replaced code in imported public modules!
+
+
 ## quick notes
 
 * It appears that `pytest.ini` must be in the current ~~directory~~ module when you call `pytest`, otherwise it will be ignored
