@@ -132,3 +132,4 @@ dmypy.json
 # added manually by me
 api-keys/my-private-api-keys.txt
 pytest_tutorial/demo_report.html
+env.bat
